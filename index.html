@@ -2,88 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Darius Lummawie | Data Systems Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darius Lummawie | Data Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">JayKay</div>
-        <ul>
-            <li><a href="#intro">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <section id="intro" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm JayKay</h1>
-            <p>Creative Designer & Developer</p>
-            <a href="#work" class="btn">View My Work</a>
+<nav>
+    <div class="logo">Darius Lummawie</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <div class="hero-content">
+        <h1>Data Systems & IoT Security</h1>
+        <p>IT Student specializing in Machine Learning, Edge Computing, and Network Security</p>
+        <a href="#projects" class="btn">View Projects</a>
+    </div>
+</header>
+
+<section id="about" class="section">
+    <div class="container">
+        <h2>About</h2>
+        <p>
+            Computer Science student focused on data-driven system development.
+            My work centers on IoT network security, Federated Learning, and 
+            Multi-access Edge Computing (MEC) architectures for anomaly detection.
+        </p>
+
+        <div class="skills">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li><strong>Programming:</strong> Python, SQL</li>
+                <li><strong>Machine Learning:</strong> PyTorch, Scikit-learn, LightGBM</li>
+                <li><strong>Data Engineering:</strong> ETL, Airflow, Superset</li>
+                <li><strong>Systems:</strong> IoT Architecture, Edge Computing</li>
+                <li><strong>Tools:</strong> Git, Linux, Streamlit</li>
+            </ul>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a passionate designer specializing in UI/UX, branding, and web development. I love creating beautiful, functional experiences.</p>
-            <img src="https://via.placeholder.com/300" alt="Profile Image" class="profile-img">
+<section id="projects" class="section dark">
+    <div class="container">
+        <h2>Featured Projects</h2>
+
+        <div class="project">
+            <h3>IoT Network Anomaly Detection (FL + MEC)</h3>
+            <p>
+                Designed a distributed anomaly detection system using GRU models
+                integrated with Federated Learning at the edge layer.
+            </p>
+            <p><strong>Stack:</strong> PyTorch, Python, Streamlit</p>
+            <a href="https://github.com/yourusername/project-link" target="_blank">View Repository</a>
         </div>
-    </section>
 
-    <section id="work" class="section">
-        <div class="container">
-            <h2>My Work</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>Description of project.</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>Description of project.</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Project 3">
-                    <h3>Project 3</h3>
-                    <p>Description of project.</p>
-                </div>
-            </div>
+        <div class="project">
+            <h3>Data Analytics Dashboard</h3>
+            <p>
+                Built an end-to-end ETL pipeline and interactive dashboard
+                for monitoring key performance indicators.
+            </p>
+            <p><strong>Stack:</strong> SQL, Airflow, Superset</p>
+            <a href="https://github.com/yourusername/project-link" target="_blank">View Repository</a>
         </div>
-    </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Get in touch: <a href="mailto:hello@jaykay.design">hello@jaykay.design</a></p>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2023 JayKay Design. All rights reserved.</p>
-    </footer>
+<section id="research" class="section">
+    <div class="container">
+        <h2>Research</h2>
+        <p>
+            Thesis: Enhancing IoT Security Through Network Architecture for 
+            Machine Learning-Based Anomaly Detection.
+        </p>
+        <p>
+            Focused on evaluating edge-level detection performance, latency,
+            and model robustness under distributed training environments.
+        </p>
+    </div>
+</section>
 
-    <script>
-        // Basic scroll animation
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(section => {
-                const rect = section.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 100) {
-                    section.classList.add('visible');
-                }
-            });
-        });
-    </script>
+<section id="contact" class="section dark">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+        <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+        <p>LinkedIn: linkedin.com/in/yourusername</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Darius Lummawie</p>
+</footer>
+
 </body>
 </html>
