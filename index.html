@@ -1,18 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Darius Lummawie | Data Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JayKay Design - Portfolio</title>
+    <style>
+        /* CSS goes here - see below */
+    </style>
 </head>
 <body>
-    <h1>Darius Lummawie | Data Portfolio</h1>
-    <p>IT Student specializing in Data Systems and IoT Security</p>
+    <nav>
+        <div class="logo">JayKay</div>
+        <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <h2>Featured Projects</h2>
-    <ul>
-        <li>IoT Network Anomaly Detection (GRU + FL)</li>
-        <li>Sales Analytics Dashboard</li>
-        <li>Hybrid ML Model Evaluation</li>
-    </ul>
+    <section id="intro" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm JayKay</h1>
+            <p>Creative Designer & Developer</p>
+            <a href="#work" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a passionate designer specializing in UI/UX, branding, and web development. I love creating beautiful, functional experiences.</p>
+            <img src="https://via.placeholder.com/300" alt="Profile Image" class="profile-img">
+        </div>
+    </section>
+
+    <section id="work" class="section">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Description of project.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Description of project.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>Description of project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Get in touch: <a href="mailto:hello@jaykay.design">hello@jaykay.design</a></p>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 JayKay Design. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Basic scroll animation
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
